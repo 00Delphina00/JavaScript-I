@@ -26,13 +26,13 @@ const intern1 = {
 }
 console.log(intern1);
 
-const intern2 = {
+const Kennan = {
   "id": 2,
   "name": "Kennan M. Diben",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
-console.log(intern2);
+console.log(Kennan);
 
 const intern3 = {
   "id": 3,
@@ -63,7 +63,7 @@ console.log(intern5);
  console.log('Her name is ' + intern1.name);
 
 // Kennan's ID
-console.log('Kennans id is ' + intern2.id);
+console.log('Kennans id is ' + Kennan.id);
 
 // Keven's email
 console.log('Kevens email is ' + intern3.email);
@@ -76,10 +76,9 @@ console.log('Antoinettas gender is ' + intern5.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-const speak = function() {
-    console.log("Hello my name is " + intern2.name + "!");
+Kennan.speak = function() {
+    return "Hello my name Kennan!";
 }
-const Kennan = Object.assign(intern2, speak);
 console.log(Kennan.speak());
 
 
