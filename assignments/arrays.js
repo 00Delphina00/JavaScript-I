@@ -109,6 +109,7 @@ for (let i=0; i < inventory.length; i++){
     }
 }
 console.log(BMWAndAudi);
+console.log("THIS PART IS STRINGIFIED. " + JSON.stringify(BMWAndAudi));
 
 
 
